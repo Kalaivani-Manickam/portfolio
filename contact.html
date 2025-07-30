@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #e0eafc, #cfdef3);
+    }
+
+    /* Navigation */
+    header {
+      background: transparent;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+    header nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #e8dddd;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    header nav a:hover {
+      color: #007bff;
+    }
+
+    /* Contact Section */
+    .contact-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+      min-height: 100vh;
+      padding: 60px 40px;
+    }
+
+    /* Left Contact Info */
+    .contact-left {
+      flex: 1;
+      max-width: 35%;
+      padding-right: 20px;
+    }
+
+    .contact-left h2 {
+      font-size: 28px;
+      margin-bottom: 10px;
+      color: #151414;
+    }
+
+    .contact-left h4 {
+      margin-top: 20px;
+      margin-bottom: 5px;
+      font-size: 16px;
+      color: #0f0e0e;
+    }
+
+    .contact-left p {
+      font-size: 15px;
+      color: #111111;
+    }
+
+    /* Right Form */
+    .contact-right {
+      flex: 1;
+      max-width: 60%;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    label {
+      font-weight: bold;
+      color: #0e0d0d;
+    }
+
+    input,
+    textarea {
+      padding: 10px;
+      border: 1px solid #000;
+      border-radius: 6px;
+      font-size: 16px;
+      width: 100%;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    button {
+  background-color: white;
+  color: #007bff; /* or any blue that matches your theme */
+  border: 2px solid #007bff;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+  width: 150px;
+  align-self: center;
+  transition: background 0.3s, color 0.3s;
+}
+
+button:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    @media screen and (max-width: 768px) {
+      .contact-section {
+        flex-direction: column;
+        padding: 30px 20px;
+      }
+
+      .contact-left,
+      .contact-right {
+        max-width: 100%;
+      }
+
+      header {
+        justify-content: center;
+      }
+
+      button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ✅ Top Navigation -->
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="resume.html">Resume</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- ✅ Contact Section -->
+  <div class="contact-section">
+    <!-- Left -->
+    <div class="contact-left">
+      <h2>Contact Me</h2>
+      <p>Excited to connect with you</p>
+      <h4>Phone</h4>
+      <p>+91 6382196461</p>
+      <h4>Email</h4>
+      <p>mkvani865@gmail.com</p>
+    <div class="social-icons">
+  <a href="https://github.com/Kalaivani-Manickam" target="_blank"><i class="fab fa-github"></i></a>
+  <a href="http://www.linkedin.com/in/m-kalaivani-862005k" target="_blank"><i class="fab fa-linkedin"></i></a>
+  <a href="https://www.instagram.com/_kalai__865/?__pwa=1" target="_blank"><i class="fab fa-instagram"></i></a>
+</div>
+</div>
+
+    <!-- Right -->
+    <div class="contact-right">
+      <form action="https://formspree.io/f/mdkdzbdv" method="POST">
+        <label>Your Name:
+          <input type="text" name="name" required>
+        </label>
+        <label>Your Email:
+          <input type="email" name="email" required>
+        </label>
+        <label>Your Message:
+          <textarea name="message" rows="6" required></textarea>
+        </label>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
